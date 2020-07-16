@@ -2,7 +2,7 @@
 name: Bug/issue report
 about: Report an issue to help improve the project.
 title: ''
-labels: 'bug'
+labels: 'kind/bug'
 assignees: ''
 ---
 **Description**
@@ -30,5 +30,5 @@ Steps to reproduce the behavior:
 
 [Optional] **Additional Context**
 <!-- Add any other context about the problem here. -->
+                                                                                                                       
 
-~                                                                                                                                              
