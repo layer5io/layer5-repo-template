@@ -19,6 +19,8 @@ Find out more on the <a href="https://layer5.io/community">Layer5 community</a>.
 <br /><br /><br /><br />
 </p>
 
+<div>&nbsp;</div>
+
 <a href="https://meshery.io/community"><img alt="Layer5 Service Mesh Community" src=".github/readme/images//slack-128.png" style="margin-left:10px;padding-top:5px;" width="110px" align="right" /></a>
 
 <a href="http://slack.layer5.io"><img alt="Layer5 Service Mesh Community" src=".github/readme/images//community.svg" style="margin-right:8px;padding-top:5px;" width="140px" align="left" /></a>
