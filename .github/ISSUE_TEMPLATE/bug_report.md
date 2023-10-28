@@ -5,16 +5,16 @@ title: ''
 labels: 'kind/bug'
 assignees: ''
 ---
-#### Current Behavior
+### Current Behavior
 <!-- A brief description of the issue. -->
 
-#### Expected Behavior
+### Expected Behavior
 <!-- A brief description of what you expected to happen. -->
 
-#### Screenshots/Logs
+### Screenshots/Logs
 <!-- Add screenshots, if applicable, to help explain your problem. -->
 
-#### Environment
+### Environment
 
 - **Host OS:** Mac Linux Windows
 - **Platform:** Docker or Kubernetes
