@@ -1,0 +1,22 @@
+{
+  "name": "layer5-repo-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Layer5 repository template – Hugo site boilerplate",
+  "scripts": {
+    "_hugo": "hugo --cleanDestinationDir",
+    "_hugo-dev": "hugo --cleanDestinationDir -e dev -DFE",
+    "_serve": "npm run _hugo-dev -- server --minify --renderToMemory",
+    "build:production": "npm run _hugo -- --minify",
+    "clean": "rm -Rf public/* resources",
+    "dev:build": "npm run _hugo-dev --",
+    "dev:serve": "npm run _hugo-dev -- server --watch=false",
+    "dev:site": "npm run _hugo-dev -- server",
+    "update:dep": "npm install --save-dev autoprefixer@latest postcss-cli@latest",
+    "update:hugo": "npm install --save-dev --save-exact hugo-extended@latest",
+    "update:pkgs": "npx npm-check-updates -u"
+  },
+  "devDependencies": {
+    "hugo-extended": "0.147.6"
+  }
+}

@@ -14,34 +14,48 @@
 
 include .github/build/Makefile.show-help.mk
 
-## Install docs.layer5.io dependencies on your local machine.
-## See https://gohugo.io/categories/installation
+.PHONY: setup check-deps check-go build site serve clean docker
+
+## ------------------------------------------------------------
+----LOCAL_BUILDS: Show help for available targets
+
+## Local: Install site dependencies
 setup:
 	npm install
 
-## Run docs.layer5.io on your local machine with draft and future content enabled.
-site: check-go
-	hugo server -D -F
-	
-## Run docs.layer5.io on your local machine. Alternate method.
-site-fast:
-	gatsby develop
+## Verify required commands and local dependencies are present.
+check-deps:
+	@echo "Checking if 'npm' and local 'hugo' binary are present..."
+	@command -v npm > /dev/null || { echo "Error: 'npm' not found. Please install Node.js and npm."; exit 1; }
+	@test -x node_modules/.bin/hugo || { echo "Error: Hugo binary not found in node_modules. Please run 'make setup' first."; exit 1; }
+	@echo "Dependencies check passed."
 
-## Build docs.layer5.io on your local machine.
-build:
-	hugo
+## Local: Build and run site locally with draft and future content enabled.
+site: check-deps check-go
+	npm run dev:site
 
-## Empty build cache and run docs.layer5.io on your local machine.
-clean: 
-	hugo --cleanDestinationDir
-	make site
+## Local: Run site locally in serve mode (without file watching).
+serve: check-deps check-go
+	npm run dev:serve
 
-.PHONY: setup build site clean site-fast check-go
+## Build site for production (no drafts, no future, no expired content).
+build: check-deps check-go
+	npm run build:production
 
+## Empty build cache and run site on your local machine.
+clean:
+	npm run clean
+	$(MAKE) site
+
+## ------------------------------------------------------------
+----MAINTENANCE: Show help for available targets
+
+## Check if Go is installed
 check-go:
 	@echo "Checking if Go is installed..."
 	@command -v go > /dev/null || (echo "Go is not installed. Please install it before proceeding."; exit 1)
 	@echo "Go is installed."
 
+## Build and run site within a Docker container
 docker:
 	docker compose watch

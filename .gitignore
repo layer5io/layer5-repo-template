@@ -14,5 +14,12 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
+# Node dependencies
+node_modules/
+
+# Hugo build output
+public/
+resources/
+
 # IDEs
 .vscode/*

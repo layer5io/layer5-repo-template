@@ -54,10 +54,10 @@ Or you may configure your IDE, for example, Visual Studio Code to automatically 
 Please contribute! Layer5 documentation uses Jekyll and GitHub Pages to host docs sites. Learn more about [Layer5's documentation framework](https://docs.google.com/document/d/17guuaxb0xsfutBCzyj2CT6OZiFnMu9w4PzoILXhRXSo/edit?usp=sharing). The process of contributing follows this flow:
 
 1. Create a fork, if you have not already, by following the steps described [here](./CONTRIBUTING-gitflow.md)
-1. In the local copy of your fork, navigate to the docs folder.
-`cd docs`
 1. Create and checkout a new branch to make changes within
 `git checkout -b <my-changes>`
+1. Install dependencies (including local Hugo).
+`make setup`
 1. Edit/add documentation.
 `vi <specific page>.md`
 1. Run site locally to preview changes.

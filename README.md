@@ -1,6 +1,24 @@
 # layer5-repo-template
 This repository is used as the boilerplate for consistency across all Layer5 repos.
 
+## Quick Start (Local Preview)
+
+> **Note:** You do not need to install Hugo globally. The required `hugo-extended` binary is managed locally via npm when you run `make setup`.
+
+### Prerequisites
+- [Node.js & npm](https://nodejs.org/) (to manage the local Hugo Extended binary)
+- [Go](https://go.dev/dl/) ≥ 1.20 (if using Hugo Modules)
+
+### Setup & Run
+
+```bash
+# Install dependencies (including local Hugo)
+make setup
+
+# Start the local Hugo development server
+make site
+```
+
 <div>&nbsp;</div>
 
 ## Join the Layer5 community!
