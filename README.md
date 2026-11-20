@@ -1,6 +1,43 @@
 # layer5-repo-template
 This repository is used as the boilerplate for consistency across all Layer5 repos.
 
+
+## AI Coding Agent Instructions
+
+This repository provides centralized instructions for AI coding agents to ensure consistency across Layer5 projects.
+
+### Canonical Instruction File
+
+`AGENTS.md` serves as the single source of truth for AI coding agent instructions.
+
+### Claude Code Compatibility
+
+`CLAUDE.md` is a symbolic link pointing to `AGENTS.md`.
+
+This allows Claude Code and other compatible coding agents to access the same instructions without maintaining duplicate files.
+
+### Updating Agent Instructions
+
+Contributors should make all changes directly in `AGENTS.md`.
+
+Do not edit `CLAUDE.md` separately or replace the symbolic link with a regular file.
+
+Changes made to `AGENTS.md` are automatically reflected when accessing `CLAUDE.md`.
+
+### Verifying the Symbolic Link
+
+To verify that the symbolic link points to the correct file, run:
+
+`readlink CLAUDE.md`
+
+The expected output is `AGENTS.md`.
+
+To verify that both paths provide identical content, run:
+
+`cmp AGENTS.md CLAUDE.md`
+
+If the files contain identical content, the command produces no output.
+
 <div>&nbsp;</div>
 
 ## Join the Layer5 community!
