@@ -1,7 +1,6 @@
 # layer5-repo-template
 This repository is used as the boilerplate for consistency across all Layer5 repos.
 
-
 ## AI Coding Agent Instructions
 
 This repository provides centralized instructions for AI coding agents to ensure consistency across Layer5 projects.
@@ -49,7 +48,7 @@ Our projects are community-built and welcome collaboration. 👍 Be sure to see 
 <a href ="https://layer5.io/community/meshmates"><img alt="MeshMates" src=".github/readme/images/layer5-community-sign.png" style="margin-right:10px; margin-bottom:15px;" width="28%" align="left"/></a>
 <h3>Find your MeshMate</h3>
 
-<p>MeshMates are experienced Layer5 community members, who will help you learn your way around, discover live projects and expand your community network. 
+<p>MeshMates are experienced Layer5 community members, who will help you learn your way around, discover live projects and expand your community network.
 Become a <b>Meshtee</b> today!</p>
 
 Find out more on the <a href="https://layer5.io/community">Layer5 community</a>. <br />
