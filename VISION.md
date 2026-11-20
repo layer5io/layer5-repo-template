@@ -7,10 +7,10 @@ It serves project leads, community contributors, and automated agents alike: it 
 It owns exactly one thing: the common scaffolding, governance files, and foundational CI mechanics shared across all Layer5 repositories.
 
 ## Canonical standards over ad-hoc conventions
-Every new repository inherits consistent contributor guardrails: mandatory DCO sign-offs in CONTRIBUTING.md (#3, #44, #45), automated issue templates with pre-configured triage labels and no blank issues (#49, #53), security disclosure policies routing to security@layer5.io (#60), and a unified Code of Conduct (#41). Standards never silently diverge across repos; upstream improvements in governance flow directly into this template.
+Every new repository inherits consistent contributor guardrails: mandatory DCO sign-offs in CONTRIBUTING.md (#3, #44, #45), automated issue templates with pre-configured triage labels and no blank issues (#49, #53), security disclosure policies routing to security@layer5.io (#60), and a unified Code of Conduct (#41). The template establishes the canonical baseline at inception; upstream improvements in governance flow directly into this template.
 
 ## Predictable developer ergonomics and modular tooling
-The root Makefile provides standard, predictable lifecycle commands across projects (#34, #35, #47). Local development dependencies and linters (#33) remain pinned, reproducible, and documented so that any contributor can clone and verify changes locally without complex environment friction.
+The root Makefile provides standard, predictable lifecycle and documentation targets (#34, #35, #47). Development dependencies and linters (#33) remain pinned, reproducible, and documented so that any contributor can clone and verify changes locally without complex environment friction.
 
 ## Lean, decoupled CI automation
 Workflows automate routine community health and release orchestration: Slack notifications (#18, #20, #54, #55), PR labeling based on active file paths (#42, #43, #48), and release drafting (#36). The template intentionally rejects repo-specific deploy targets or fragile external webhooks, keeping automation general, resilient, and non-blocking.
