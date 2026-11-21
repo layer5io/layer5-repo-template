@@ -1,4 +1,4 @@
-﻿# Vision
+# Vision
 
 layer5-repo-template exists so that every new Layer5 project starts with a proven, canonical foundation for open-source governance, contributor onboarding, continuous integration, and agent-assisted engineering, without forcing maintainers to reinvent community standards or copy-paste decaying boilerplate.
 
