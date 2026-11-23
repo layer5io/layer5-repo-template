@@ -37,6 +37,10 @@ To verify that both paths provide identical content, run:
 
 If the files contain identical content, the command produces no output.
 
+## PR Gate: Require no-mistakes
+
+This template ships the no-mistakes agent skill (`skills/no-mistakes/SKILL.md`, pinned to no-mistakes `v1.106.1`) and the `Require no-mistakes` required check. Every PR must be raised through the no-mistakes pipeline: run `no-mistakes init`, then `git push no-mistakes <branch>`. Telemetry is disabled by default (`NO_MISTAKES_TELEMETRY=0`). See `AGENTS.md` for the full gate, telemetry opt-out, and drift-recovery instructions.
+
 <div>&nbsp;</div>
 
 ## Join the Layer5 community!
