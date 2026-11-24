@@ -38,7 +38,16 @@ Do not maintain a separate copy of these instructions in CLAUDE.md.
 
 When available, consult area-specific agent skills located at:
 
+```
 .agents/skills/<area>/SKILL.md
+```
+
+`.claude/skills` is a symbolic link to `.agents/skills` where supported by the agent toolchain. Read the matching skill before changing that area:
+
+- `.agents/skills/repo-navigation/SKILL.md` — Repository navigation, layout orientation, and build targets
+- `.agents/skills/code-review/SKILL.md` — Code review, DCO sign-off, commit standards, and PR hygiene
+- `.agents/skills/test-guidance/SKILL.md` — Testing procedures, test execution, and verification evidence
+- `.agents/skills/docs-guidance/SKILL.md` — Documentation standards, markdown formatting, and link integrity
 
 Follow the instructions applicable to the area being modified.
 
